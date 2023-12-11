@@ -1,0 +1,2 @@
+class BearController < ApplicationController
+end
