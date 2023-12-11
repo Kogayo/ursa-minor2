@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+
+.top-page-header {
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px 10px 30px;
+}
+
+.site-name{
+  font-size: 40px;
+  font-family: 'La Belle Aurore', cursive;
+  margin: 0 15px;
+}
+
+.nav-bar {
+  font-size: 18px;
+  display: flex;
+  width: 100%;
+}
+
+.nav-item {
+  margin: 0 15px;
+}

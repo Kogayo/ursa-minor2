@@ -1,0 +1,27 @@
+<%# CSS・・・assets/stylesheets/shared/header.css %>
+<header class='top-page-header'>
+   <p class='logo'>
+    <%= link_to 'Ursa Minor',"#", class:'site-name' %>
+  </p>
+  <div class='nav'>
+    <ul class="nav-bar">
+      <li class="nav-item">
+        <%= link_to '熊出没情報',"#", class: "nav-link"%>
+      </li>
+      <li class="nav-item">
+        <%= link_to '地域交流',"#", class: "nav-link"%>
+      </li>
+      <li class="nav-item">
+        <%= link_to 'コンタクト', contact_index_path, class: "nav-link"%>
+      </li>
+      <li class="nav-item">
+        <%= link_to 'マイページ',"#", class: "nav-link"%>
+      </li>
+      <li class="nav-item">
+        <%= link_to 'ログイン',"#", class: "nav-link"%>
+      </li>
+      <!-- サインアップボタン -->
+      <!-- <li><a href="/新規登録">sign-up</a></li> -->
+    </ul>
+  </div>
+</header>
