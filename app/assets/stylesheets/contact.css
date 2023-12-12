@@ -105,6 +105,7 @@ textarea {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-top: 30px;
 }
 
 .side-box {
@@ -193,4 +194,41 @@ textarea {
 }
 .wrapper .button:nth-child(4) span {
   color: #333;
+}
+
+/* スマートフォンサイズ */
+
+@media screen and (max-width: 600px) {
+
+.contacts {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.info {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.side-box {
+  width: 100%;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.wrapper .button {/* フレックスアイテムの幅を45%に設定し、伸縮を許可 */
+  margin-bottom: 10px; /* 下部の余白 */
+  /* その他のスタイル */
+}
+
 }

@@ -1,26 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=La+Belle+Aurore&display=swap');
 
-.top-page-header {
-  width: 100vw;
-  height: 100px;
+
+#header {
+  max-width: 960px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 10px 20px 10px 30px;
+  justify-content: space-between;
+  height: 120px;
+  margin: 0 auto;
+  padding: 0 4%;
 }
 
-.site-name{
-  font-size: 40px;
-  margin: 0 15px;
+.site-title {
+  line-height: 1px;
+  font-weight: 600;
+  font-size: 2.5rem;
+  font-family: 'Caveat', cursive;
   font-family: 'La Belle Aurore', cursive;
 }
 
-.nav-bar {
-  font-size: 18px;
+#header ul {
   display: flex;
-  width: 100%;
+  padding: 10px 0;
+  align-items: center;
+  margin: 0 10px;
 }
 
-.nav-item {
-  margin: 0 15px;
+#header ul li {
+  margin: 20px 10px;
+}
+
+
+
+/* スマホ */
+
+@media screen and (max-width: 600px) {
+  /* header */
+  #header {
+    flex-direction: column;
+    height: auto;
+    line-height: 40px;
+    margin: 20px auto;
+  }
+
+  .site-title {
+    margin-top: 20px;
+  }
+
+
+  #header li {
+    margin: 10px;
+    font-size: 0.8rem;
+    align-items: center;
+  }
+
+  .nav-link {
+    font-size: 0.8rem;
+  }
+
 }
