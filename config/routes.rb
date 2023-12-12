@@ -6,7 +6,6 @@ Rails.application.routes.draw do
   resources :bear 
   resources :contact, only: [:index]
   resources :community, only: [:index]
-  
 end
 
   # get 'contact/index'

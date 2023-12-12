@@ -1,0 +1,196 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+html {
+  height: 100%;
+}
+body { 
+  background: #ccc;
+}
+
+form { 
+  width:420px;
+  height: 354px;
+  margin: 20px;
+}
+
+.feedback-input {
+  color: black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #5966a9;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #ffffff; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#5966a9;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#5966a9; }
+
+.contacts {
+  height: 750px;
+}
+
+.guide {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.guide-title {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 30px;
+  padding-top: 10px;
+  margin-bottom: 25px;
+}
+
+.guidanse-main {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 20px;
+}
+
+.guidanse {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  padding: 13px;
+  margin-bottom: 15px;
+}
+
+
+.sns-links {
+  width:420px;
+  height: 354px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.info {
+  height: 75%;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.side-box {
+  outline: 2px solid #ccc;
+  outline-offset: 4px;
+  border-radius: 6px;
+  padding: .875rem;
+  position: relative;
+}
+
+.wrapper {
+  width: 100%;
+  height: 50px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.wrapper .button {
+  height: 60px;
+  width: 60px;
+  float: left;
+  margin: 0 5px;
+  background: white;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.wrapper .button:hover {
+  width: 200px;
+}
+
+.wrapper .button .icon {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.wrapper .button:nth-child(1):hover .icon {
+  background: #4267b2;
+}
+.wrapper .button:nth-child(2):hover .icon {
+  background: #1da1f2;
+}
+.wrapper .button:nth-child(3):hover .icon {
+  background: #e1306c;
+}
+.wrapper .button:nth-child(4):hover .icon {
+  background: #333;
+}
+
+.wrapper .button .icon i {
+  font-size: 25px;
+  line-height: 60px;
+}
+
+.wrapper .button:hover .icon i {
+  color: #fff;
+}
+
+.wrapper .button span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.wrapper .button:nth-child(1) span {
+  color: #4267b2;
+}
+.wrapper .button:nth-child(2) span {
+  color: #1da1f2;
+}
+.wrapper .button:nth-child(3) span {
+  color: #e1306c;
+}
+.wrapper .button:nth-child(4) span {
+  color: #333;
+}
