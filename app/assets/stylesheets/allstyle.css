@@ -9,14 +9,21 @@ html {
 body {
   color: #24292e;
   font-family: "Sawarabi Gothic";
+  background-color: #4db1ec;
+  background-repeat: no-repeat;
+  background-position: center; */
+  background-size: cover;
+
+  height: 100vh;
 }
 
 p {
   font-size: 1rem;
+  color: aliceblue;
 }
 
 img {
-  max-width: 100%; /* スマホサイズでも画像が縮小される。 */
+  max-width: 100%; 
 }
 
 li {
@@ -24,7 +31,3 @@ li {
   font-size: 1.2rem;
 }
 
-
-body {
-  background-color: #d3d3d3;
-}
