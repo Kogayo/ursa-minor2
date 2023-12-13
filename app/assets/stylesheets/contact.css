@@ -65,6 +65,7 @@ textarea {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: aliceblue;
 }
 
 .guide-title {
@@ -87,6 +88,7 @@ textarea {
   font-size: 18px;
   padding: 13px;
   margin-bottom: 15px;
+  color: aliceblue;
 }
 
 
@@ -109,12 +111,13 @@ textarea {
 }
 
 .side-box {
-  outline: 2px solid #ccc;
-  outline-offset: 4px;
+  box-shadow: 0 0 0 2px #ccc; 
   border-radius: 6px;
   padding: .875rem;
   position: relative;
+  background-color: rgba(255, 255, 255, 0.15);
 }
+
 
 .wrapper {
   width: 100%;

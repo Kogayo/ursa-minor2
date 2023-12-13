@@ -17,6 +17,7 @@
   font-size: 2.5rem;
   font-family: 'Caveat', cursive;
   font-family: 'La Belle Aurore', cursive;
+  color: aliceblue;
 }
 
 #header ul {
@@ -24,6 +25,7 @@
   padding: 10px 0;
   align-items: center;
   margin: 0 10px;
+  color: aliceblue;
 }
 
 #header ul li {
