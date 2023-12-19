@@ -1,26 +1,31 @@
-<h2>Log in</h2>
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+</head>
+  <body style="background-image: url('/assets/background.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+  <%= render "shared/header" %>
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "current-password" %>
-  </div>
-
-  <% if devise_mapping.rememberable? %>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
+<div id="login" class="login-form-container">
+  <header>LOGIN</header>
+  <fieldset>
+    <div class="input-wrapper">
+      <input type="text" placeholder="your@email.com" />
     </div>
-  <% end %>
+    <div class="input-wrapper">
+      <input type="password" placeholder="password" />
+    </div>
+    <button id="continue" type="button">CONTINUE</button>
+  </fieldset>
+</div>
 
-  <div class="actions">
-    <%= f.submit "Log in" %>
-  </div>
-<% end %>
+  <%= render "shared/footer" %>
+</body>
+</html>
 
-<%= render "devise/shared/links" %>

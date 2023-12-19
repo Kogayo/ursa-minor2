@@ -5,10 +5,11 @@
     </h1>
     <nav>
       <ul>
-        <li><%= link_to 'Bear', "#", aria_label: "熊出没情報" %></li>
-        <li><%= link_to 'Community',   "#", aria_label: "地域交流" %></li>
-        <li><%= link_to 'Contact', contact_index_path, aria_label: "コンタクト" %></li>
-        <li><%= link_to 'My-page', "#", aria_label: "マイページ" %></li>
-        <li><%= link_to 'Sign-in',   "#", aria_label: "ログイン" %></li>
+        <li><%= link_to '熊情報', new_user_session_path, class: "Bear" %></li>
+        <li><%= link_to '地域交流', new_user_session_path, class: "Community" %></li>
+        <li><%= link_to 'コンタクト', contact_index_path, class: "Contact" %></li>
+        <li><%= link_to 'マイページ',  user_index_path, class: "My-page" %></li>
+        <li><%= link_to 'ログイン', new_user_session_path, class: "sign-in" %></li>
     </nav>
   </header>
+
