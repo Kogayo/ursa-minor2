@@ -7,11 +7,7 @@ body {
   background: #ccc;
 }
 
-form { 
-  width:420px;
-  height: 354px;
-  margin: 20px;
-}
+
 
 .feedback-input {
   color: black;

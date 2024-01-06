@@ -2,8 +2,8 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="<%= asset_path 'reset.css' %>">
+<link rel="stylesheet" href="<%= asset_path 'style.css' %>">
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -49,12 +49,12 @@
         </div>
       </div>
       <div class="side-box">
-        <form>      
-          <input name="name" type="text" class="feedback-input" placeholder="Name" />   
-          <input name="email" type="text" class="feedback-input" placeholder="Email" />
-          <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
-          <input type="submit" value="送  信"/>
-        </form>
+        <%= form_with model: @user, class: "sns-links", local: true do |f| %>
+          <%= f.text_field :name, class: "feedback-input", placeholder: "Name" %>
+          <%= f.email_field :email, class: "feedback-input", placeholder: "Email" %>
+          <%= f.text_area :comment, class: "feedback-input", placeholder: "Comment" %>
+          <%= f.submit "送  信", class: "contact-btn" %>
+        <% end %>
       </div>
     </div>
   </div>

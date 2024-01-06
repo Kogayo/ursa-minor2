@@ -1,32 +1,56 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
+  <!-- スタイルシートのリンク -->
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
-  <body style="background-image: url('/assets/background.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+
+<body style="background-image: url('/assets/background.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+  <!-- ヘッダー部分の描画 -->
   <%= render "shared/header" %>
 
-<div id="login" class="login-form-container">
-  <header>SIGN UP</header>
-  <fieldset>
-    <div class="input-wrapper">
-      <input type="text" placeholder="your@email.com" />
-    </div>
-    <div class="input-wrapper">
-      <input type="password" placeholder="password" />
-    </div>
-    <button id="continue" type="button">CONTINUE</button>
-  </fieldset>
-</div>
+  <div class="container2">
+    <!-- ユーザー登録フォーム -->
+    <%= form_with model: @user, url: user_registration_path, local: true do |f| %>
+      <div class="center-box2">
+        <div class="form-box2">
+          <!-- フォームフィールド -->
+          <%= f.text_field :nickname, class:"feedback-input", id:"nickname", placeholder:"ニックネーム" %>
+          <%= f.email_field :email, class:"feedback-input", id:"email", placeholder:"Email" %>
+          <%= f.password_field :password, class:"feedback-input", id:"password", placeholder:"password" %>
+          <%= f.password_field :password_confirmation, class:"feedback-input", id:"password_confirmation", placeholder:"password_confirmation" %>
+          
+          <!-- 都道府県選択 -->
+          <%= f.select :prefecture_id, [
+            ['北海道', 1], ['青森県', 2], ['岩手県', 3], ['宮城県', 4], ['秋田県', 5],
+            ['山形県', 6], ['福島県', 7], ['茨城県', 8], ['栃木県', 9], ['群馬県', 10],
+            ['埼玉県', 11], ['千葉県', 12], ['東京都', 13], ['神奈川県', 14], ['新潟県', 15],
+            ['富山県', 16], ['石川県', 17], ['福井県', 18], ['山梨県', 19], ['長野県', 20],
+            ['岐阜県', 21], ['静岡県', 22], ['愛知県', 23], ['三重県', 24], ['滋賀県', 25],
+            ['京都府', 26], ['大阪府', 27], ['兵庫県', 28], ['奈良県', 29], ['和歌山県', 30],
+            ['鳥取県', 31], ['島根県', 32], ['岡山県', 33], ['広島県', 34], ['山口県', 35],
+            ['徳島県', 36], ['香川県', 37], ['愛媛県', 38], ['高知県', 39], ['福岡県', 40],
+            ['佐賀県', 41], ['長崎県', 42], ['熊本県', 43], ['大分県', 44], ['宮崎県', 45],
+            ['鹿児島県', 46], ['沖縄県', 47]
+          ], { include_blank: '選択してください' }, { class: 'feedback-input', id: 'prefecture' } %>
+          
+          <!-- その他のフィールド -->
+          <%= f.text_field :last_name, class:"feedback-input", id:"last-name", placeholder:"例) 山田" %>
+          <%= f.text_field :first_name, class:"feedback-input", id:"first-name", placeholder:"例) 太郎" %>
+          <%= f.text_field :read_last, class:"feedback-input", id:"last-name-kana", placeholder:"例) ヤマダ" %>
+          <%= f.text_field :read_first, class:"feedback-input", id:"first-name-kana", placeholder:"例) タロウ" %>
 
+          <!-- 送信ボタン -->
+          <%= f.submit "新規登録", class: "regist-btn" %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+  <!-- フッター部分の描画 -->
   <%= render "shared/footer" %>
 </body>
 </html>
-
-

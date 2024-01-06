@@ -5,7 +5,9 @@ Rails.application.routes.draw do
   root to: 'bear#index'
 
   resources :bear 
-  resources :contact, only: [:index]
+  resources :contact, only: [:index] do
+    post '/', action: :create_inquiry, on: :collection
+  end
   resources :community, only: [:index]
 end
 
